@@ -86,6 +86,10 @@ Route::get('/about', function () {
     // return view('layout.master');
 });
 
+Route::get('/view/comments/{id}', 'CommentController@show');
+Route::post('/post/comment', 'CommentController@store');
+Route::post('/reply/comment', 'CommentRepliesController@store');
+
 Route::get('/packages-list', function () {
     $data= Package::all();
    return view('packages',compact('data'));

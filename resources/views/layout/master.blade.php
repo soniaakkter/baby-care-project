@@ -120,6 +120,8 @@
                     <div class="mySlides">
                         <q>{{$item->review}}</q>
                         <p class="author">- {{$item->name}}</p>
+                        <a href="{{url('/view/comments/'.$item->id)}}" class="btn btn-outline-info btn-sm">Show
+                                Comment</a>
                     </div>
                 @endforeach
                 
