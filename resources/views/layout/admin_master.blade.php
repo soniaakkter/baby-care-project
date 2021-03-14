@@ -7,6 +7,7 @@
   <title>@yield('title') || BabyCare</title>
 
   <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="{{asset('/css/jquery.dataTables.min.css')}}">
   <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
@@ -90,6 +91,7 @@
 </div>
 <!-- ./wrapper -->
 <script src="{{ asset('/js/app.js') }}" defer></script>
+<script src="{{ asset('/js/jquery.dataTables.min.js') }}" defer></script>
 <!-- jQuery -->
 @yield('script')
 </body>

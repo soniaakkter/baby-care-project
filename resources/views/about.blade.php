@@ -86,12 +86,15 @@
 Being two busy parents with years of experience in the childcare and child protection field, we understand the challenge of being able to access quick but safe childcare services.
 
 Our mission is simple, to support the facilitation of fast, simple, tailored and SAFE childcare.
-
 Whether you are a child care provider wanting to advertise your services or a parent looking for child care services we are sure that this site in general will be of great benefit to you.
 
 In line with our mission that finding and advertising services should be simple, we have one membership level and one price which guarantees access to all of the great membership benefits.
 
-Thanks for being a part of our success story.
+Thanks for being a part of our success story.our focus is for all children to 'learn through play', in a safe, developing, and nurturing environment. We take pride in dedicating ourselves to each and every child throughout their nursery life, arming them with the necessary tools required before they embark upon their lifelong journey.
+
+With a team of qualified, experienced and caring staff, Kids Kingdom Day Care fulfils aspiration by offering inspiration by way of individually developing a curriculum for each child. Furthermore, Kids Kingdom Day Care is the bridge between parent and child by creating a special 'kingdom' which children can call home.
+
+Our commitment to 'KIDS' is encapsulated as follows: Knowledge Inspiration Dedication Safet
     </p>
 </div>
     </div>

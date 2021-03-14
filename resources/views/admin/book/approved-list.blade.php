@@ -7,7 +7,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <table class="table">
+              <table class="table" id="myTable">
               <thead class="thead-light">
                 <tr>
                   <th scope="col">#</th>
@@ -45,16 +45,6 @@
               </tbody>
             </table>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">«</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">»</a></li>
-                </ul>
-              </div>
             </div>
 
             <div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -90,7 +80,7 @@
               </div>
 @endsection
 @section('script')
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
     <script>
         $(function(){
             $('.payBtn').click(function(){
@@ -101,6 +91,10 @@
                 $('#payForm [name=payable]').val(payable);
                 $('#payForm [name=paid]').val(payable);
             });
+
+            $(document).ready( function () {
+           $('#myTable').DataTable();
+        } );
         });
     </script>
 @endsection

@@ -3,7 +3,7 @@
 <div class="card col-md-8" id="reply">
     <form role="form" method="POST" action="{{action('AdminMessageController@message_reply')}}">
         @csrf
-        <input type="hidden" name="recipent">
+        <input type="hidden" name="to">
         <div class="card-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Reply customer message</label>

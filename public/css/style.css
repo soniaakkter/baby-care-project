@@ -365,7 +365,10 @@ span.rollover {
 /****************service start***************/
 
 .our_service_area{width:100%; transition-padding:60px 0px 0px;}
-.our_service_area h2{ margin-bottom:40px;}
+.our_service_area h2 {
+   margin-bottom: 40px;
+   margin-top: 33px;
+}
 .our_service_area h4{   font-size: 18px;   color: #10B9B9;   margin: 30px 0 10px;}
 .our_service_area  p{ font-size: 14px; color: #080101; line-height: 24px;    padding-bottom: 0px;}
 .box_img{ margin-bottom:0px !important;   border: 2px solid #10B9B9;}

@@ -187,7 +187,7 @@ section.chat_section {
         <h4 style="margin-bottom: 15px;">Messages</h4>
         <hr>
         @foreach ($messages as $item)
-          <div class="@if($item->sender == Auth::user()->id) message-blue @elseif($item->recipent == Auth::user()->id) message-orange @endif">
+          <div class="@if($item->from == Auth::user()->id) message-orange @else message-blue @endif">
             <p class="message-content">{{$item->message}}</p>
           </div>
       @endforeach

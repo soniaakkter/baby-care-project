@@ -7,7 +7,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <table class="table">
+              <table class="table" id="myTable">
               <thead class="thead-light">
                 <tr>
                   <th scope="col">#</th>
@@ -40,15 +40,16 @@
               </tbody>
             </table>
               </div>
-              <!-- /.card-body -->
-              <div class="card-footer clearfix">
-                <ul class="pagination pagination-sm m-0 float-right">
-                  <li class="page-item"><a class="page-link" href="#">«</a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">»</a></li>
-                </ul>
-              </div>
             </div>
+@endsection
+@section('script')
+<script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
+<script>
+    $(function () {
+        $(document).ready( function () {
+           $('#myTable').DataTable();
+        } );
+    
+    });
+</script>
 @endsection

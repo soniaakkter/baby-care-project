@@ -36,13 +36,10 @@
                              <li><a href="{{url('/about')}}">About</a></li>
                              <li><a href="{{url('/packages-list')}}">Packages</a> </li>
                              <li><a href="{{url('/employee-list')}}">Employees</a> </li>
-                             <li><a style="
-                                 background: #099084;
-                                 color: #fff;
-                             " href="{{url('user-booking')}}">Book</a> </li>
+                             <li><a href="{{url('user-booking')}}">Book</a> </li>
                              <li><a href="{{url('admin/dashboard')}}">Admin Panel</a> </li>
                              @if (isset(Auth::user()->email))
-                             <li><a href="{{action('DashboardController@dashboard')}}">Dashboard</a> </li>
+                             <li><a href="{{action('DashboardController@dashboard')}}">User Dashboard</a> </li>
                              <li><a href="{{ route('logout') }}"
                               onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">Logout</a> 

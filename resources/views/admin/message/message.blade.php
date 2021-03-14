@@ -9,14 +9,15 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <table class="table">
+              <table class="table" id="myTable">
               <thead class="thead-light">
                   @php
                       $i =1;
                   @endphp
                 <tr>
                   <th scope="col">{{$i++}}</th>
-                  <th scope="col">Name</th>
+                  <th scope="col">From</th>
+                  <th scope="col">To</th>
                   <th scope="col">New massage</th>
                   <th class="text-right">Action</th>
                 </tr>
@@ -30,11 +31,12 @@
                    @foreach ($messages as $item)
                        <tr>
                         <th scope="row">{{$i++}}</th>
-                        <td>{{$item->senders['name']}}</td>
+                        <td>{{$item->frmmessage['name']}}</td>
+                        <td>{{$item->tomessage['name']}}</td>
                         <td>{{$item->message}}</td>
                       <td class="text-right">
                       {{--<a href="{{action('PackageController@update_package',['id' => $item->id])}}" class="btn btn-sm btn-primary">Reply</a>--}}
-                      <a href="#" class="btn btn-sm btn-primary replyBtn" data-recipent="{{$item->sender}}">Reply</a>
+                      <a href="#" class="btn btn-sm btn-primary replyBtn" data-from="{{$item->from}}">Reply</a>
                       </td>
                     </tr>
                    @endforeach
@@ -50,18 +52,22 @@
             </div>
 @endsection
 @section('script')
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
 <script>
     $(function () {
         $("#reply").hide();
         $(".replyBtn").click(function (e){
             e.preventDefault();
             $("#reply").show();
-            var recipent = $(this).data('recipent');
+            var from = $(this).data('from');
             
-            $("#reply [name = recipent]").val(recipent);
+            $("#reply [name = to]").val(from);
             
         });
+
+        $(document).ready( function () {
+           $('#myTable').DataTable();
+        } );
     
     });
 </script>

@@ -25,7 +25,35 @@
   
   <body>   
    @include('shared.header')
-
+   <section class="wpm_title_ber" style="background:url({{asset('images/bg-image.jpg')}}) center center fixed;">
+  
+  <div class="wpm_opacity_bg">
+ 
+  <div class="container">
+      
+        <div class="row">
+          
+            <div class="col-sm-12">
+              
+                <h2 class="text-black">Services</h2>
+                  
+                  <div class="ber_link text-center">
+                  
+                    <h5 class="sub_title">WE HAVE 25 YEARS EXERIENCE IN BABY CARE</h5>
+                  
+                      <p> <i class="fa fa-angle-double-right"></i> <a href="index.html">Home</a> / <a href="about.html">Services</a>  <i class="fa fa-angle-double-left"></i> </p>
+                  
+                 </div>
+              
+              </div>
+          
+          </div>
+      
+      </div> 
+      
+    </div>    
+ 
+ </section>
     
    <section class="wpm_team_area" id="about" >
    

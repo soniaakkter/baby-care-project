@@ -8,7 +8,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-              <table class="table">
+              <table class="table" id="myTable">
               <thead class="thead-light">
                 <tr>
                   <th scope="col">#</th>
@@ -37,7 +37,16 @@
               </tbody>
             </table>
               </div>
-              <!-- /.card-body -->
-              {{$package->links()}}
             </div>
+@endsection
+@section('script')
+<script src="{{asset('js/jquery-3.5.1.min.js')}}"></script>
+<script>
+    $(function () {
+        $(document).ready( function () {
+           $('#myTable').DataTable();
+        } );
+    
+    });
+</script>
 @endsection

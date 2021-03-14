@@ -58,50 +58,8 @@
    
    </section>
    
-   
-   <section class="wpm_team_area" id="about" >
-   
-   <div class="container">
-
-    <div class="row">
-    
-        <h2>Our <span class="wpm_color_word">Employees</span></h2>
-        
-        <div class="wpm_border"> <i class="fa fa-smile-o"></i> </div>
-    
-        @foreach ($table as $item)
-        <div class="col-sm-3">
-        
-            <div class="wpm_col_text">
-                <div class="imageOuter" style="margin:0">
-                   
-                    <a class="image"  href="#">
-                        <span class="rollover" ></span>
-                        <img style="
-                        height: 200px;
-                    " class="imgborder" alt="" src="{{asset('uploads/employee/'.$item->image)}}">			
-                    </a> 
-                       
-                </div>
-                
-                    <h4>{{$item->name}}</h4>
-                    
-                    <p>{{$item->designation}}</p>
-                
-            </div>
-        
-        </div>
-        @endforeach
-    <div class="col-md-12">
-        <a href="{{url('/employee-list')}}" style="
-        margin-top: 10px;
-    " class="btn btn-primary mt-1">See more</a>
-    </div>
-    </div>
-
-</div>
-
-</section>
+   <!--------Event are End-------->
+  
 
     <!-----------Service are start------------->
      <section id="service"  class="our_service_area">
@@ -236,7 +194,7 @@
                     
                     	<img src="images/card.gif" alt="" class="img-responsive">
                     
-                    	<h3>Online Payment</h3>
+                    	<h3>Payment System</h3>
                     
                     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero eget luctus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero eget luctus.</p>
                         
@@ -252,7 +210,7 @@
                     
                     	<img src="images/car.gif" alt="" class="img-responsive">
                     
-                    	<h3>Broughting Facility</h3>
+                    	<h3>24/7 Broughting Facility</h3>
                     
                     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero eget luctus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi libero eget luctus.</p>
                         
